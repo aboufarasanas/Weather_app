@@ -1,0 +1,264 @@
+/* أساسيات النمط */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+:root {
+    --bg-color: #222;
+    --second-bg-color: #1B262C;
+    --text-color: #fff;
+    --main-color: #00F5FF;
+}
+
+body {
+    background: url('images/bg1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: rgba(255, 255, 255, .6);
+    color: black;
+    padding: 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: -55px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 16px;
+}
+
+.weather_icon {
+    width: 130px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.error {
+    text-align: left;
+    margin-left: 10%;
+    font-size: 14px;
+    margin-top: 10px;
+    color: red;
+    font-size: 16px;
+    display: none;
+}
+
+/* استعلامات الوسائط للاستجابة */
+@media (max-width: 1024px) {
+    .card {
+        margin: 80px auto 0;
+        padding: 30px 25px;
+    }
+
+    .search input {
+        padding: 20px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .search button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .weather h1 {
+        font-size: 70px;
+    }
+
+    .weather h2 {
+        font-size: 40px;
+    }
+
+    .humidity, .wind {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin: 50px auto 0;
+        padding: 20px 15px;
+    }
+
+    .search input {
+        padding: 15px;
+        height: 40px;
+        font-size: 14px;
+        margin: 20px;
+    }
+
+    .search button {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        margin-left: -57px;
+    }
+
+    .weather_icon {
+        width: 140px;
+        margin-top: 20px;
+    }
+
+    .weather h1 {
+        font-size: 60px;
+    }
+
+    .weather h2 {
+        font-size: 35px;
+    }
+
+    .details {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+
+    .col {
+        margin-bottom: 20px;
+    }
+
+    .humidity, .wind {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 70%;
+        margin: 30px auto 0;
+        padding: 15px 10px;
+    }
+
+    .search {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .search input {
+        padding: 20px;
+        height: 35px;
+        font-size: 14px;
+        margin-right: 0;
+        margin-right: 20px;
+    }
+
+    .search button {
+        width: 35px;
+        height: 35px;
+        align-self: center;
+    }
+
+    .weather_icon {
+        width: 120px;
+        margin-top: 10px;
+    }
+
+    .weather h1 {
+        font-size: 50px;
+    }
+
+    .weather h2 {
+        font-size: 25px;
+    }
+
+    .humidity, .wind {
+        font-size: 18px;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px){
+    .card {
+        width: 80%;
+        margin: 30px auto 0;
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width: 360px){
+    .search input {
+        padding: 15px;
+        margin: 10px;
+    }
+
+}
