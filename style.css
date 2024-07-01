@@ -1,4 +1,3 @@
-/* أساسيات النمط */
 * {
     margin: 0;
     padding: 0;
@@ -118,7 +117,6 @@ body {
     display: none;
 }
 
-/* استعلامات الوسائط للاستجابة */
 @media (max-width: 1024px) {
     .card {
         margin: 80px auto 0;
@@ -259,6 +257,13 @@ body {
     .search input {
         padding: 15px;
         margin: 10px;
+    }
+
+        .search button {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        margin-left: -40px;
     }
 
 }
