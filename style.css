@@ -250,7 +250,7 @@ body {
 @media (max-width: 480px){
     .card {
         width: 80%;
-        margin: 30px auto 0;
+        margin: 80px auto 0;
         padding: 15px 10px;
     }
 }
