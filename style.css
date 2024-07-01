@@ -13,9 +13,21 @@
 }
 
 body {
-    background: url('images/bg1.jpg') no-repeat;
+    background: url('images/bg7.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .4);
+    z-index: -1;
 }
 
 
@@ -23,7 +35,7 @@ body {
     width: 90%;
     max-width: 470px;
     background: rgba(255, 255, 255, .1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     color: #fff;
     margin: 100px auto 0;
     border-radius: 20px;
@@ -259,11 +271,10 @@ body {
         margin: 10px;
     }
 
-        .search button {
+    .search button {
         width: 30px;
         height: 30px;
         margin-right: 10px;
         margin-left: -40px;
     }
-
 }
